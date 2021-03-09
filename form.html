@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>FORM</title>
+</head>
+<style>
+    table{
+        border: solid;
+        border-color: black;
+        background-color: rosybrown;
+    }
+    td{
+        border: solid;
+        border-color: black;
+        border-width: 1px;
+        background-color: rgba(236, 9, 9, 0.336);
+    }
+</style>
+<body>
+    <form>
+    <table>
+     <tr><td>Search:</td>
+    <td><input type="search" list="mylist"></td></tr>   
+        <tr>
+          
+            <td>Firstname:</td>
+            <td><input type="text" required placeholder="Firstname"></td>
+        </tr>
+        <tr>
+            <td>Lastname:</td>
+            <td><input type="text" required placeholder="Lastname"></td>
+        </tr>
+        <tr>
+            <td>Tel:</td>
+            <td><input type="tel" pattern="[/d{10}]"></td>
+        </tr>
+      <tr>
+          <td>Age:</td>
+          <td> <input type="number" required min="18" max="50" step="2"></td>
+      </tr>
+
+      <tr>
+        <td>Email:</td>
+        <td> <input type="email" required ></td>
+    </tr>
+    <tr>
+        <td>Website</td>
+        <td> <input type="url" ></td>
+    </tr>
+    <tr>
+        <td>DOB</td>
+        <td> <input type="date" required ></td>
+    </tr>
+    <tr>
+        <td>Experience</td>
+        <td> <input type="range"></td>
+    </tr>
+
+    <datalist id="mylist">
+        <option>Graduate</option>
+        <option>PostGraduate</option>
+        <option>Phd</option>
+    </datalist>
+
+    </table>
+    <br>
+    <input type="submit" value="SUBMIT">
+</form>
+</body>
+
+</html>
